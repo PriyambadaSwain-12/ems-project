@@ -32,7 +32,7 @@ public class SecurityConfig {
     }
     @Bean public CorsConfigurationSource cors(){
         CorsConfiguration c=new CorsConfiguration();
-        c.setAllowedOrigins(List.of("http://localhost:3000"));
+        c.setAllowedOrigins(List.of("http://localhost:3000","https://ems-front-one.vercel.app"));
         c.setAllowedMethods(List.of("GET","POST","PUT","DELETE","OPTIONS","PATCH"));
         c.setAllowedHeaders(List.of("*"));c.setAllowCredentials(true);
         UrlBasedCorsConfigurationSource s=new UrlBasedCorsConfigurationSource();
